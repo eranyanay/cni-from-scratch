@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: alpine1
+spec:
+  containers:
+  - name: alpine
+    image: alpine
+    command:
+      - "/bin/ash"
+      - "-c"
+      - "sleep 2000"
+  nodeSelector:
+    kubernetes.io/hostname: node1
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx1
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  nodeSelector:
+    kubernetes.io/hostname: node1
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx2
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  nodeSelector:
+    kubernetes.io/hostname: node2
+---
