@@ -1,7 +1,7 @@
 # Writing a CNI plugin from scratch
 This repository holds the complete implementation of the examples seen in Kubecon Barcelona talk, 2019.
 
-> Writing a CNI plugin from scratch / Eran Yanay &mdash; [Slides](https://speakerdeck.com/eranyanay/writing-a-cni-plugin-from-scratch) ]
+> Writing a CNI plugin from scratch / Eran Yanay &mdash; [Video](https://www.youtube.com/watch?v=zmYxdtFzK6s&list=PLj6h78yzYM2PpmMAnvpvsnR4c27wJePh3&index=303&t=0s) | [Slides](https://speakerdeck.com/eranyanay/writing-a-cni-plugin-from-scratch) ]
 
 # Prerequisits
 * Two node K8s cluster. Kubeadm works just fine.
